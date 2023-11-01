@@ -1,0 +1,297 @@
+@font-face{
+    font-family: MyFont;
+    src: url("./newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: MyFont;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: red;
+}
+.main{
+    height:100%;
+    background-color: var(--Dark-Slate-Grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: var(--White);
+    border-radius: 2rem;
+    /* gap: 1rem; */
+}
+.left-image{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0, 0, 2rem, 2rem;
+} 
+
+.hide{
+    display: none;
+}
+@media only screen and (min-width:660px){
+    .container{
+        width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: 1.5fr 2fr;
+        background-color: var(--White);
+        border-radius: 2rem;
+    }
+    .left-image{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0, 0, 2rem, 2rem;
+    } 
+    .hide{
+        display: none;
+    }
+}
+@media only screen and (min-width:990px){
+    .left img{
+        border-radius: 1.5rem;
+        content: url(./newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg);
+        /* width: 100%;
+        height: 100%; */
+
+    }
+    .container{
+        width: 60%;
+        /* height: 26.5rem; */
+        min-height: 0;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hide{
+        display: none;
+    }
+}
+.right{
+    padding: 2rem;
+}
+.header-info{
+    font-size: 1rem;
+    font-family: Myfont;
+    font-weight: 700;
+}
+.p-info{
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+ul{
+    margin: 0 0 0 1.5rem
+}
+ul li {
+    list-style-image: url(./newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
+    margin: 0.3rem 0 0 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+@media only screen and (min-width:660px){
+    .right{
+        padding: 2rem;
+    }
+    .header-info{
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+}
+@media only screen and (min-width:990px){
+    .right{
+        padding: 1rem;
+    }
+    .header-info{
+        font-size: 1.9rem;
+        font-family: Myfont;
+        font-weight: 700;
+    }
+    .p-info{
+        margin: 0.5rem 0 0.5rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.email-address{
+    display: flex;
+    justify-content: space-between;
+}
+.email-address-header{
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+.notvalid-info{
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: var(--Tomato)
+}
+.invalidemail{
+    border: 1px solid var(--Tomato);
+}
+.emailinput{
+    height: 2rem;
+    width: 100%;
+    background-color: var(--White);
+    margin-bottom: 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+::placeholder{
+    color: var(--grey);
+}
+.subscribe-btn{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    border-radius:0.3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--White);
+}
+.subscribe-btn:hover {
+    background-color: var(--Tomato);
+}
+.card{
+    background-color: var(--White);
+    width: 100%;
+    height: 100%;
+    padding: 7rem 2rem 2rem 2rem;
+}
+.card img{
+    width: 2.5rem;
+    height: 3rem;
+}
+.card-header{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+.card-info{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.dismiss-btn{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    border-radius:0.3rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--White);
+}
+.dismiss-btn:hover {
+    background-color: var(--Tomato);
+}
+@media only screen and (min-width:660px){
+    .card{
+        background-color: var(--White);
+        width: 100%;
+        height: 100%;
+        padding: 7rem 2rem 2rem 2rem;
+    }
+    .card img{
+        width: 3rem;
+        height: 4rem;
+    }
+    .card-header{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+    .card-info{
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+    .dismiss-btn{
+        width: 100%;
+        height: 2rem;
+        background-color: var(--Dark-Slate-Grey);
+        border: none;
+        border-radius:0.3rem;
+        margin-top: 8rem;
+        text-align: center;
+        color: var(--White);
+    }
+    .dismiss-btn:hover {
+        background-color: var(--Tomato);
+    }
+}
+@media only screen and (min-width:990px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 30%;
+        height: 50%;
+        padding: 2.5rem;
+        border-radius: 2rem;
+    }
+    .card img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .card-header{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 0.2rem;
+    }
+    .card-info{
+        font-size: 0.6rem;
+        font-weight: 400;
+        margin-top: 0.5rem;
+    }
+    .dismiss-btn{
+        width: 100%;
+        height: 2rem;
+        background-color: var(--Dark-Slate-Grey);
+        border: none;
+        border-radius:0.3rem;
+        margin-top: 1rem;
+        text-align: center;
+        color: var(--White);
+        cursor: pointer;
+    }
+    .dismiss-btn:hover {
+        background-color: var(--Tomato);
+    }
+}
